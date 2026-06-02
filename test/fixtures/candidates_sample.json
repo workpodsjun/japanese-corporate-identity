@@ -1,0 +1,26 @@
+[
+  {
+    "corporateNumber": "9000000000000",
+    "name": "株式会社サンプルデータ",
+    "address": "東京都千代田区丸の内1-1-1",
+    "companyUrl": "https://www.sample-data.example.jp/",
+    "closeCause": "0",
+    "source": "fixture"
+  },
+  {
+    "corporateNumber": "9000000000001",
+    "name": "株式会社サンプルデータ関西",
+    "address": "大阪府大阪市北区1-1-1",
+    "companyUrl": "https://sample-data-kansai.example.jp/",
+    "closeCause": "0",
+    "source": "fixture"
+  },
+  {
+    "corporateNumber": "9000000000002",
+    "name": "旧サンプルデータ株式会社",
+    "address": "東京都千代田区丸の内1-1-1",
+    "companyUrl": "https://www.sample-data.example.jp/",
+    "closeCause": "01",
+    "source": "fixture"
+  }
+]

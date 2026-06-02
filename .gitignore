@@ -1,0 +1,8 @@
+node_modules/
+.npm-cache/
+coverage/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store

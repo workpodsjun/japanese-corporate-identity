@@ -1,0 +1,40 @@
+{
+  "name": "japanese-corporate-identity",
+  "version": "0.1.0",
+  "description": "Resolve Japanese corporate identity from messy company names and domains using official NTA and gBizINFO data.",
+  "type": "module",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "japanese-corporate-identity": "./bin/jci.ts",
+    "jci": "./bin/jci.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "test": "node --test --experimental-strip-types test/*.test.ts",
+    "check:public-boundary": "node scripts/check_public_boundary.mjs",
+    "check": "npm run test && npm run check:public-boundary"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "keywords": [
+    "japan",
+    "corporate-number",
+    "identity-resolution",
+    "nta",
+    "gbizinfo",
+    "data-hygiene"
+  ]
+}
