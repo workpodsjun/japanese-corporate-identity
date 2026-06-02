@@ -55,3 +55,16 @@ Keep the OSS core limited to reusable identity-resolution logic:
 - synthetic fixtures
 
 Private adapters, internal schemas, real company lists, customer records, and API key values belong outside this repository.
+
+## OpenAI Codex for OSS Application Notes
+
+When applying to maintainer-support programs, keep public application material focused on the reusable OSS core:
+
+- public repository URL, npm package, CI, release notes, and synthetic fixtures
+- why Japanese corporate identity resolution matters for CRM, recruiting, procurement, and B2B SaaS data quality
+- security boundary: no private adapters, customer data, API keys, or internal schemas
+- planned API-credit usage: public tests, docs, release review, scoring validation, response mapping, and credential-safe smoke tests
+
+If a form has a character limit, prefer short English text for global reviewers. Keep account identifiers, organization IDs, and other account-specific values out of public docs.
+
+For optional security-review benefits, state the authorization boundary explicitly: use the benefit only for repositories the maintainer owns or is authorized to administer, and not for private systems or customer data.
