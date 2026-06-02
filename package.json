@@ -1,10 +1,18 @@
 {
   "name": "japanese-corporate-identity",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Resolve Japanese corporate identity from messy company names and domains using official NTA and gBizINFO data.",
   "type": "module",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workpodsjun/japanese-corporate-identity.git"
+  },
+  "homepage": "https://github.com/workpodsjun/japanese-corporate-identity#readme",
+  "bugs": {
+    "url": "https://github.com/workpodsjun/japanese-corporate-identity/issues"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
