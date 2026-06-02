@@ -38,10 +38,12 @@ For local development in this repository:
 
 ```bash
 npm test
+npm run build
+npm run check
 ```
 
 Node.js 22.6+ is required because the test workflow uses Node's TypeScript type stripping.
-Published npm packages use compiled JavaScript from `dist/`.
+Published npm packages use generated JavaScript from `dist/`. Run `npm run build` after changing `src/` or `bin/`; CI fails if generated `dist/` output is stale.
 
 ## Library Usage
 

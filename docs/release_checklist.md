@@ -34,7 +34,7 @@ git status --short -- .
 
 Review the `npm pack --dry-run` file list before publishing or tagging. It should include only package files declared in `package.json`.
 
-Before npm publish, install the tarball into a temporary project and verify package import and CLI execution. This catches Node's restriction against stripping TypeScript types inside `node_modules`.
+`npm run check` rebuilds `dist/` and fails when generated output is stale. Before npm publish, install the tarball into a temporary project and verify package import and CLI execution. This catches package-entrypoint issues that unit tests can miss.
 
 ## Live API Smoke Gate
 

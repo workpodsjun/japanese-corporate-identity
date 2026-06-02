@@ -31,6 +31,17 @@ npm --cache .npm-cache pack --dry-run
 
 The `.npm-cache/` directory is ignored and should not be committed.
 
+## Distribution Build
+
+Runtime package files are generated from `src/` and `bin/jci.ts`:
+
+```bash
+npm run build
+npm run check
+```
+
+`npm run check` rebuilds `dist/` and fails when generated output differs from the committed files. Update `src/index.d.ts` when public type signatures change; the build copies it to `dist/index.d.ts`.
+
 ## Scope Discipline
 
 Keep the OSS core limited to reusable identity-resolution logic:
