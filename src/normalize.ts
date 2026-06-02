@@ -21,6 +21,14 @@ const LEGAL_ENTITY_TERMS = [
   "LLC",
   "Ltd.",
 ];
+const ENGLISH_LEGAL_ENTITY_PATTERNS = [
+  /\bco\.?\s*,?\s*ltd\.?\b/gi,
+  /\bcorporation\b/gi,
+  /\bcorp\.?\b/gi,
+  /\binc\.?\b/gi,
+  /\bllc\b/gi,
+  /\bltd\.?\b/gi,
+];
 
 const SMALL_KANA_MAP = new Map<string, string>([
   ["ァ", "ア"],
@@ -51,6 +59,9 @@ export function normalizeCompanyName(value: string): string {
   let normalized = value.normalize("NFKC");
   for (const term of LEGAL_ENTITY_TERMS) {
     normalized = normalized.replaceAll(term.normalize("NFKC"), "");
+  }
+  for (const pattern of ENGLISH_LEGAL_ENTITY_PATTERNS) {
+    normalized = normalized.replace(pattern, "");
   }
   normalized = normalized.replace(/[（(].*?[）)]/g, "");
   normalized = normalized.replace(/[・･]/g, "");

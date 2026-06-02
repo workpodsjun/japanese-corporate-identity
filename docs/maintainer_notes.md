@@ -11,6 +11,8 @@ Good:
 - remove: `-`, `－`, `‐`, `−`, `–`, `—`
 - preserve: `ー`
 
+English legal suffixes should be removed case-insensitively and tolerate common spacing or punctuation variants, such as `Inc.`, `CO., LTD.`, `Co Ltd`, `Corp.`, and `Corporation`.
+
 ## Public Boundary Check
 
 The public-boundary checker intentionally scans repository content for private-project markers. The checker file itself is skipped so that the deny-list patterns do not match their own definitions.
