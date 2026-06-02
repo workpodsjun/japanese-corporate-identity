@@ -1,6 +1,6 @@
 {
   "name": "japanese-corporate-identity",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Resolve Japanese corporate identity from messy company names and domains using official NTA and gBizINFO data.",
   "type": "module",
   "license": "MIT",
@@ -8,8 +8,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "japanese-corporate-identity": "./dist/bin/jci.js",
-    "jci": "./dist/bin/jci.js"
+    "japanese-corporate-identity": "dist/bin/jci.js",
+    "jci": "dist/bin/jci.js"
   },
   "exports": {
     ".": {
