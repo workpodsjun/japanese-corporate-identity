@@ -6,7 +6,7 @@ This project is not a replacement for official services. It helps applications n
 
 ## Status
 
-`v0.1.0` is a focused public release candidate. It includes normalization, URL builders for official sources, lightweight live clients, candidate scoring, a CLI, synthetic fixtures, and CI checks. It does not ship official datasets or private adapters.
+`v0.1.x` is a focused public release line. It includes normalization, URL builders for official sources, lightweight live clients, candidate scoring, a CLI, synthetic fixtures, npm-ready JavaScript output, type definitions, and CI checks. It does not ship official datasets or private adapters.
 
 ## Why This Exists
 
@@ -41,6 +41,7 @@ npm test
 ```
 
 Node.js 22.6+ is required because the test workflow uses Node's TypeScript type stripping.
+Published npm packages use compiled JavaScript from `dist/`.
 
 ## Library Usage
 

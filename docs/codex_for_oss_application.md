@@ -18,7 +18,7 @@ Reliable Japanese corporate identity resolution is useful for CRM enrichment, re
 
 ## Current Status
 
-This is an early public-ready release candidate. The v0.1.0 scope is intentionally small and already implemented in the repository:
+This is an early public-ready release candidate. The v0.1.x scope is intentionally small and already implemented in the repository:
 
 - company-name normalization
 - NTA full-width query conversion
@@ -26,10 +26,11 @@ This is an early public-ready release candidate. The v0.1.0 scope is intentional
 - candidate scoring with confidence signals
 - official-source URL builders and minimal live clients
 - CLI JSON output
+- npm-ready JavaScript output and type definitions
 - synthetic fixtures
 - CI and public-boundary checks
 
-The package intentionally has no runtime dependencies in v0.1.0. Tests use Node.js built-in test runner with TypeScript type stripping.
+The package intentionally has no runtime dependencies in v0.1.x. Tests use Node.js built-in test runner with TypeScript type stripping, while published packages use JavaScript files in `dist/`.
 
 ## Maintainer Role
 
@@ -68,7 +69,7 @@ Public usage is not yet established. The near-term plan is to dogfood the OSS co
 | Overclaiming accuracy | Return confidence signals and manual-review flags |
 | Dataset redistribution concerns | Do not ship official datasets; require user-provided API credentials |
 
-## v0.1.0 Release Readiness
+## Release Readiness
 
 - `npm test` passes with synthetic fixtures.
 - `npm run check:public-boundary` verifies known private markers and secret-like filenames.

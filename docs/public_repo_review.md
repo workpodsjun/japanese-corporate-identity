@@ -12,6 +12,7 @@ No blocking public-release issue is currently known after local review and check
 - Codex for OSS application brief
 - release and first-push procedure
 - package contents via `npm pack --dry-run --cache ./.npm-cache`
+- npm tarball install/import/CLI behavior
 - synthetic fixtures
 - public-boundary checker
 - live API credential handling docs
@@ -23,6 +24,7 @@ No blocking public-release issue is currently known after local review and check
 - Strengthened `scripts/check_public_boundary.mjs` so secret-like files are blocked by filename without reading their values.
 - Added release steps for GitHub repo creation, initial commit, and `v0.1.0` release.
 - Added a human confirmation gate for optional live NTA and gBizINFO smoke checks.
+- Added npm-ready JavaScript output and type definitions after tarball smoke showed Node does not strip TypeScript types under `node_modules`.
 
 ## Remaining Human Gates
 

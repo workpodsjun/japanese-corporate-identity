@@ -7,7 +7,8 @@ This checklist prepares `japanese-corporate-identity` for the first public GitHu
 Public release includes:
 
 - TypeScript library source in `src/`
-- CLI in `bin/jci.ts`
+- npm runtime output in `dist/`
+- CLI in `dist/bin/jci.js`
 - synthetic fixtures and tests
 - README, contribution, security, and data-source docs
 - CI and public-boundary checks
@@ -32,6 +33,8 @@ git status --short -- .
 ```
 
 Review the `npm pack --dry-run` file list before publishing or tagging. It should include only package files declared in `package.json`.
+
+Before npm publish, install the tarball into a temporary project and verify package import and CLI execution. This catches Node's restriction against stripping TypeScript types inside `node_modules`.
 
 ## Live API Smoke Gate
 
@@ -65,7 +68,7 @@ gh repo create japanese-corporate-identity \
 
 This directory currently lives inside the wider Jun AI Workspace. Confirm before `git init` so the nested repository does not accidentally become a parent-repo submodule entry.
 
-## v0.1.0 GitHub Release
+## GitHub Release
 
 After the initial push and successful CI run:
 
